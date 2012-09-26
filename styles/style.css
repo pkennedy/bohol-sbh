@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.hidden {display: none;}
+.clear {clear: both;}
+.cleft {clear: left;}
+.cright {clear: right;}
+.fleft {float: left;}
+.fright {float: right}
+
