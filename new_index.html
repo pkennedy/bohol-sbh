@@ -16,6 +16,7 @@
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/jquery.ui.datepicker.js" type="text/javascript"></script>
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/common.js" type="text/javascript"></script>
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbox.js" type="text/javascript"></script>
+<script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbtn.js" type="text/javascript"></script>
 <script type="text/javascript" async="" src="js/ga.js"></script>
 <script src="js/colorbox.js"></script>
 <script src="js/functions.js"></script>
@@ -141,7 +142,7 @@
             </div>
             
 			
-			<div id="menu" class="grid_10 omega" style="z-index: 1000; ">
+			<div id="menu" class="grid_8 alpha" style="z-index: 1000; ">
 				
 
 
@@ -221,22 +222,63 @@
 							
 						</li>
 										
-                   <li class=""><a href='http://live.ipms247.com/booking/book-rooms-368-en-English' target='_blank'>Book Now</a>
-				</li></ul>
+<!--                   <li class=""><a href='http://live.ipms247.com/booking/book-rooms-368-en-English' target='_blank'>Book Now</a> 
+				</li> -->
+                </ul>
 			</div>
 		
+        <div id="bookingbutton" class="grid_2 omega" style="margin: 0; padding:0; left:0; margin-top:40px;">
+               <a href="http://live.ipms247.com/booking/book-rooms-368-en-English" id="_resbookingbtnA" target="_blank" style="text-decoration:none;">
+                  <div id="_resbookingbtnContainer"></div>
+               </a>
+<script>
+jQuery("#_resbookingbtnContainer").resBookingBtn({  
+btnContainer: "_resbookingbtnContainer", 
+Gradiant1: "#ed4c0c",  
+Gradiant2: "#f2ed61",  
+ShowBorder: true,
+BorderColor: "#141717",
+BorderWidth: 1,
+BorderType: "solid",
+ShowShadow: true,
+HShadow: "-2",
+VShadow: "1",
+BlurShadow: "3",
+SpreadShadow: "0",
+ShadowColor: "#000000",
+ShadowType: "outset",
+ShowCorner: true,
+CornerWidth: 2,
+FontFamily: "Arial, Helvetica, sans-serif",
+FontSize:"18",
+TextColor: "#f7f5f7",
+TextDecoration: "none",
+TextAlign:"center",
+TextCaption:"Room Reservations",
+btnEffect:"none",
+btnSpeed:1000,
+btnHeight:21,
+btnWidth:170,
+});  
+</script>
+        </div>
+
+
+
+
         </div>	
         </div>	
 		<div class="clear"></div>
     </div> 
+
+
+
 <div class="clear"></div>	
 	<div class="container_16" style="margin: 0px auto;">
         
-    
-
-
-<div class="contentwrap">
-<a href="javascript:void(0)" id="showmain" onclick="unhidehome()" style="display: block; color: rgb(255, 255, 255); "><p style="position:absolute; color:#FFFFFF; top:470px; right:10px; z-index:100; text-decoration:underline;">read more</p></a>
+<div class="contentwrap" style="visibility: hidden" >
+<a href="javascript:void(0)" id="showmain" onclick="unhidehome()" style="display: block; color: rgb(255, 255, 255); ">
+<p style="position:absolute; color:#FFFFFF; top:470px; right:10px; z-index:100; text-decoration:underline;">read more</p></a>
 	<div class="closecontent">
     	<a href="javascript: void(0);" onclick="hidehome()"><img src="images/close.png" style="vertical-align: middle;"></a>
     </div>
@@ -244,12 +286,13 @@
 <div class="grid_16" id="col0">
    <div class="clear"></div>
 </div>
-<div class="grid_4" id="col1" style="visibility: visible" >
+<div class="grid_4" id="col1" style="visibility: hidden" >
    <div class="grid_4" style="width: 201px; height: 692px; margin-right: 40px">
       <div class="blackbox">
          <form name="_resBBBox" action="http://live.ipms247.com/booking/book-rooms-368" target="_blank" method="post">
            <div class="bb_resbox" id="bb_resBookingBox">
            </div>
+<!--
 <script type="text/javascript">
     $("#bb_resBookingBox").bb_resBookingBox({
         btnContainer: "bb_resBookingBox",
@@ -301,7 +344,7 @@
         LblChildsCaption: "Child",
         LblRoomsCaption: "Rooms"
     });  
-</script>
+</script> -->
          </form>
       </div>
 	  <div class="blackbox" style="margin-bottom: 200px">		
@@ -309,7 +352,9 @@
 	     <div class="clear">&nbsp;</div>
 	  </div>
 </div>
-<div class="clear" ></div></div><div class="colorise" id="col2" style=" visibility:visible;   background-image: url(http://www.boholsouthbeach.com/images/blackdot.png); float: left; height: 120px; overflow: hidden; position: relative; top: 465px; background-position: initial initial; background-repeat: repeat repeat; "><br><div class="grid_12" id="col3"><h3 style="color: rgb(255, 255, 255); ">
+<div class="clear"></div>
+</div>
+<div class="colorise" id="col2" style=" visibility:hidden;   background-image: url(http://www.boholsouthbeach.com/images/blackdot.png); float: left; height: 120px; overflow: hidden; position: relative; top: 465px; background-position: initial initial; background-repeat: repeat repeat; "><br><div class="grid_12" id="col3"><h3 style="color: rgb(255, 255, 255); ">
 	Bohol South Beach Hotel, Alona Beach, Panglao, Bohol </h3>
 <p style="color: rgb(255, 255, 255); ">
 	Four Star Luxury and a warm welcome await you at our beachside location at Bohol South Beach Hotel...<br />
@@ -325,7 +370,8 @@
 	Bohol South Beach is a byword for luxury, taste and peerless service; its built a reputation for fun, modern elegance and high standards in customer care.</p>
 <p style="color: rgb(255, 255, 255); ">
 	Come stay with us and experience tropical luxury.</p>
-<div class="clear"></div></div><div class="clear"></div></div>
+<div class="clear"></div></div><div class="clear"></div>
+</div>
 <div class="clear"></div>
 </div>		<div class="clear"></div>
 		</div>
