@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Bohol South Beach Hotel Contact Us</title>
+<meta name="keywords" content="Bohol Hotels, Panglao Hotels, Panglao Hotel Deals, Alona Beach Hotels, Panglao Special Offers, Hotels in Panglao, Panglao Hotel Special Offers, Panglao Diving, Panglao Scuba Diving, Balicasag Island, Virgin Island, Danao Beach, Alona Beach, Bohol Diving, Philippines Diving, Tarsier Sanctuary, Panglao, Maumag Sanctuary">
+<meta name="description" content="Panglao Hotel, Bohol South Beach Hotel, Alona Beach, Panglao">
+<link href="../styles/reset.css" type="text/css" rel="stylesheet">
+<link href="../styles/960-16.css" type="text/css" rel="stylesheet">
+<link href="../styles/style.css" type="text/css" rel="stylesheet">
+<link href="../styles/colorbox.css" type="text/css" rel="stylesheet">
+<link href="../styles/look.css" type="text/css" rel="stylesheet">
+
+<link href="http://live.ipms247.com/themes/reservation/css/bookingbtn/resbookingbox.css" rel="stylesheet" type="text/css" />
+<link href="http://live.ipms247.com/themes/reservation/css/bookingbtn/jquery.ui.datepicker.css" rel="stylesheet" type="text/css" />
+<script src="http://live.ipms247.com/themes/reservation/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/jquery.ui.datepicker.js" type="text/javascript"></script>
+<script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/common.js" type="text/javascript"></script>
+<script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbox.js" type="text/javascript"></script>
+<script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbtn.js" type="text/javascript"></script>
+
+<script type="text/javascript" async="" src="../js/ga.js"></script>
+<script src="../js/colorbox.js"></script>
+<script src="../js/functions.js"></script>
+<script>
+                                                                                                                                                                                                 var root = '/';
+                                                                                                                                                                                                 $(function () {
+                                                                                                                                                                                                     showcart();
+                                                                                                                                                                                                 });
+	</script>
+<script type="text/javascript" src="../js/supersized.3.2.6.min.js"></script>
+<script type="text/javascript" src="../js/customfuncs.js"></script>
+
+<script type="text/javascript">
+    var url = window.location.pathname.split("/");
+    url = url[(url.length - 1)];
+
+
+    $(function () {
+        $('.colorbox').colorbox({
+            opacity: .4,
+            maxHeight: "95%",
+            maxWidth: "95%",
+            onOpen: function () {
+                $('.youtube-player').css('visibility', 'hidden');
+            },
+            onClosed: function () {
+                $('.youtube-player').css('visibility', 'visible');
+            }
+        });
+
+        var zIndexNumber = 1000;
+        $('#menu').each(function () {
+            $(this).css('zIndex', zIndexNumber);
+            zIndexNumber -= 10;
+        });
+
+        // if on home
+        switch (url) {
+
+
+            case "": case "home": case "index.html": case "new_index.html": 
+
+                $("#showmain").css('display', 'block');
+                $(".colorise").css({ background: 'url(http://www.boholsouthbeach.com/images/blackdot.png) repeat', float: 'left', height: '120px', overflow: 'hidden', position: 'relative', top: '465px' });
+                $(".colorise h3, .colorise p").css("color", "#FFFFFF");
+
+                //start supersized
+                $.supersized({
+
+                    // Functionality
+                    slide_interval: 4000, 	// Length between transitions
+                    transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed: 1400, 	// Speed of transition
+
+                    // Components							
+                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    slides: [			// Slideshow Images
+{image: 'images/carousel/Home1.jpg' },
+{ image: 'images/carousel/Home2.jpg' },
+{ image: 'images/carousel/Home3.jpg' },
+{ image: 'images/carousel/Home4.jpg' },
+{ image: 'images/carousel/Home5.jpg' },
+{ image: 'images/carousel/Home6.jpg' },
+{ image: 'images/carousel/Home7.jpg' },
+{ image: 'images/carousel/Home8.jpg' },
+{ image: 'images/carousel/Home9.jpg' },
+{ image: 'images/carousel/Home10.jpg' }
+
+                });
+                //end supersized
+                break;
+
+
+            default:
+                $(".contentwrap").removeClass('grid_12').addClass('grid_16 conswap');
+                $("#showmainleft").remove();
+                $(".conswap").removeClass('contentwrap').addClass('contentwrap_int');
+                $(".frame").css("background", "#666665 ");
+                $("body").css("background", "#FCFBE9 url('http://www.boholsouthbeach.com/images/background.jpg') no-repeat top center fixed");
+                break;
+        }
+
+
+    });
+    function changebg(image) {
+        $("body").css("background", "url('http://www.boholsouthbeach.com/images/carousel/" + image + "') no-repeat fixed center top #343837");
+    }
+
+    function unhidehome() {
+        var delay = 1000;
+        //var fadein = setTimeout("$('.colorise').fadeIn(500);", delay);
+        $(".colorise").animate({ top: '0', height: '510px' }, 500);
+        $("#showmain").css('display', 'none');
+        $(".closecontent").show();
+    };
+
+    function hidehome() {
+        //$('.colorise').fadeOut(500);
+        $(".colorise").animate({ top: '465px', height: '175px' }, 500);
+        var fadein = setTimeout("$('#showmain').show();", 500);
+        //$("#showmain").show();
+        $(".closecontent").hide();
+    }	
+</script>	
+
+</head>
+
+<body style="background-image: url(http://boholsouthbeach.com/images/background.jpg); background-attachment: fixed; background-color: rgb(252, 251, 233); background-position: 50% 0%; background-repeat: no-repeat no-repeat; ">
+
+   <div id="cboxOverlay" style="display: none; "></div>
+   <div id="colorbox" style="padding-bottom: 42px; padding-right: 42px; display: none; " class="">
+      <div id="cboxWrapper" style="">
+         <div id="false" style="">
+            <div id="cboxTopLeft" style="float: left; "></div>
+            <div id="cboxTopCenter" style="float: left; "></div>
+            <div id="cboxTopRight" style="float: left; "></div>
+         </div>
+         <div id="false" style="clear: left; ">
+            <div id="cboxMiddleLeft" style="float: left; "></div>
+               <div id="cboxContent" style="float: left; ">
+                  <div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; " class=""></div>
+                  <div id="cboxLoadingOverlay" style="" class=""></div>
+                  <div id="cboxLoadingGraphic" style="" class=""></div>
+                  <div id="cboxTitle" style="" class=""></div>
+                  <div id="cboxCurrent" style="" class=""></div>
+                  <div id="cboxNext" style="" class=""></div>
+                  <div id="cboxPrevious" style="" class=""></div>
+                  <div id="cboxSlideshow" style="" class=""></div>
+                  <div id="cboxClose" style="" class=""></div>
+               </div>
+            <div id="cboxMiddleRight" style="float: left; "></div>
+         </div>
+         <div id="false" style="clear: left; ">
+            <div id="cboxBottomLeft" style="float: left; "></div>
+            <div id="cboxBottomCenter" style="float: left; "></div>
+            <div id="cboxBottomRight" style="float: left; "></div>
+         </div>
+      </div>
+      <div id="false" style="position: absolute; width: 9999px; visibility: hidden; display: none; "></div>
+   </div>
+   <div class="frame" style="background-color: rgb(102, 102, 101); background-position: initial initial; background-repeat: initial initial; ">
+      <div class="container_16">
+         <div class="grid_16" id="header">
+            <div id="logo" class="grid_6 alpha">
+                <a href="http://www.boholsouthbeach.com/new_index.html"><img src="../images/SF-BSB.png" height="100px" width="320px" alt="Bohol South Beach Hotel&amp, Panglao"></a>
+            </div>
+			
+			<div id="menu" class="grid_8 alpha" style="z-index: 1000; ">
+				
+                <li class="dropmenu">
+					
+						<li class="sys_menuactive"><a href="../new_index.html">Welcome</a>
+							
+								<ul class="submenu subsys_menuactive">
+									
+									<li><a href="http://www.boholsouthbeach.com/about_us">About Us</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/hotel_location">Location</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/getting_here">Getting Here</a></li>
+									
+<!--									<li><a href="http://www.boholsouthbeach.com/blog">Blog</a></li> -->
+
+									<li><a href="http://www.boholsouthbeach.com/contact_us">Contact Us</a></li>									
+																		
+								</ul>
+							
+						</li>
+						<li class=""><a href="http://www.boholsouthbeach.com/rooms">Accomodations</a>
+							
+								<ul class="submenu sub">
+									
+									<li><a href="http://www.boholsouthbeach.com/sea_view_rooms">Sea View Rooms</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/standard_rooms">Standard Rooms</a></li>
+																		
+								</ul>
+							
+						</li>
+					
+						<li class=""><a href="http://www.boholsouthbeach.com/services_amenities">Services &amp; Amenities </a>
+							
+								<ul class="submenu sub">
+									
+									<li><a href="http://www.boholsouthbeach.com/dining">Dining</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/indoor_lounge">Indoor Lounge Area</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/rooftop_hangout">Rooftop Deck</a></li>									
+									
+								</ul>
+							
+						</li>
+					
+						<li class=""><a href="http://www.boholsouthbeach.com/destinations">Destinations</a>
+							
+								<ul class="submenu sub">
+									
+									<li><a href="http://www.boholsouthbeach.com/diving_tours">Diving Tours</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/balicasag island">Balicasag Island</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/virgin_island">Virgin Island</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/danao_beach">Danao Beach</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/alona_beach">Alona Beach</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/bohol_history">Bohol History</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/wwii_sites">World War II Sites</a></li>
+									
+									<li><a href="http://www.boholsouthbeach.com/chocolate_hills">Chocolate Hills</a></li>
+
+									<li><a href="http://www.boholsouthbeach.com/tarsier">Tarsier Sanctuary</a></li>
+									
+								</ul>
+							
+						</li>
+					
+						<li class=""><a href="http://www.boholsouthbeach.com/gallery_images">Gallery</a>
+							
+						</li>
+										
+                   <!--                   <li class=""><a href='http://live.ipms247.com/booking/book-rooms-368-en-English' target='_blank'>Book Now</a> 
+				</li> -->
+                </ul>
+
+			</div>
+		
+
+
+  <div id="bookingbutton" class="grid_2 omega" style="margin: 0; padding:0; left:0; margin-top:40px;">
+               <a href="http://live.ipms247.com/booking/book-rooms-368-en-English" id="_resbookingbtnA" target="_blank" style="text-decoration:none;">
+                  <div id="_resbookingbtnContainer"></div>
+               </a>
+<script>
+jQuery("#_resbookingbtnContainer").resBookingBtn({  
+btnContainer: "_resbookingbtnContainer", 
+Gradiant1: "#ed4c0c",  
+Gradiant2: "#f2ed61",  
+ShowBorder: true,
+BorderColor: "#141717",
+BorderWidth: 1,
+BorderType: "solid",
+ShowShadow: true,
+HShadow: "-2",
+VShadow: "1",
+BlurShadow: "3",
+SpreadShadow: "0",
+ShadowColor: "#000000",
+ShadowType: "outset",
+ShowCorner: true,
+CornerWidth: 2,
+FontFamily: "Arial, Helvetica, sans-serif",
+FontSize:"18",
+TextColor: "#f7f5f7",
+TextDecoration: "none",
+TextAlign:"center",
+TextCaption:"Room Reservations",
+btnEffect:"none",
+btnSpeed:1000,
+btnHeight:21,
+btnWidth:170,
+});  
+</script>
+        </div>
+
+
+
+        </div>	
+        </div>	
+		<div class="clear"></div>
+    </div> 
+<div class="clear"></div>	
+	<div class="container_16" style="margin: 0px auto;">
+        
+    
+
+
+<div class="grid_16 conswap contentwrap_int">
+<a href="javascript:void(0)" id="showmain" onclick="unhidehome()" style="display:none; color:#FFFFFF;"><p style="position:absolute; color:#FFFFFF; top:470px; right:10px; z-index:100; text-decoration:underline;">read more</p></a>
+	<div class="closecontent">
+    	<a href="javascript: void(0);" onclick="hidehome()"><img src="../images/close.png" style="vertical-align: middle;"></a>
+    </div>
+
+<div class="grid_16" id="col0">
+<h1>
+	Contact Us</h1>
+<p>
+	Bohol South Beach Hotel can be contacted in a number of ways</p>
+<h3>
+	Email</h3>
+<p>
+	Our email address is <a href="mailto:boholsouthbeach@gmail.com">boholsouthbeach@gmail.com</a></p>
+<h3>
+	Telephone</h3>
+<p>
+	Our telephone number is +63 (01) 043 37781998</p>
+<h3>
+	Social Media</h3>
+<p>
+	We are active on <a href="https://www.facebook.com/boholsouthbeach.hotel">Facebook</a> and <a href="http://twitter.com/#!/BoholSouthBeach">Twitter</a></p>
+</div>
+<div class="grid_16 conswap contentwrap_int" id="Div1"><div class="gallerybox">
+<div style="clear:both; padding: 5px 0; height: 630px; width: 940px; position: relative; overflow: hidden" id="slideshow-mod4f2909d1cce15">
+<a href="http://www.boholsouthbeach/images/gallery/IMG_6928.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; "><img src="../images/gallery/IMG_6928.jpg" width="940" height="630" style="margin-left: 0px;"></a>
+<a href="http://www.boholsouthbeach/images/gallery/IMG_6962.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; "><img src="../images/gallery/IMG_6962.jpg" width="940" height="630" style="margin-left: 0px;"></a>
+<a href="http://www.boholsouthbeach/images/gallery/IMG_6965.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; "><img src="../images/gallery/IMG_6965.jpg" width="940" height="630" style="margin-left: 0px;"></a>
+<a href="http://www.boholsouthbeach/images/gallery/IMG_6968.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; "><img src="../images/gallery/IMG_6968.jpg" width="940" height="630" style="margin-left: 0px;"></a>
+</div><script src="../js/cycle.js" type="text/javascript"></script><script>
+                                                                       $(function () {
+                                                                           $("#slideshow-mod4f2909d1cce15").cycle({
+                                                                               fx: 'fade',
+
+                                                                               timeout: 2000
+                                                                           });
+                                                                       });
+	</script>
+</div>
+
+</div>		
+<div class="clear"></div>
+		</div>
+        </div>
+
+<div class="clear"></div>
+
+		<div class="frame">
+		<div class="container_16">
+        <div class="grid_16" id="footer">
+
+			<div class="grid_16">
+				
+			</div>
+            <div class="grid_14" style="font:11px Arial; color:#fff">
+                Bohol South Beach Hotel, Alona Beach, Panglao, Bohol, Philippines, Tel +63 (01) 043 37781998
+            </div>
+            <div class="grid_2 omega" style="text-align:right;">
+				<a href="https://www.facebook.com/boholsouthbeach.hotel" title="Bohol South Beach Hotel on Facebook"><img src="../images/facebook.png" alt="Bohol South Beach Hotel on Facebook" style="margin-right:5px;"></a>
+				<a href="http://twitter.com/#!/BoholSouthBeach" title="Bohol South Beach Hotel on Twitter"><img src="../images/twitter.png" alt="Bohol South Beach Hotel on Twitter" style="margin-right:5px;"></a>
+				<a href="http://www.youtube.com/channel/UCn0QT3TFilYk440wIcKmdxQ?feature=plcp" title="Bohol South Beach Hotel on Youtube"><img src="../images/youtube.png" alt="Bohol South Beach Hotel on Youtube" style="margin-right:5px;"></a>				
+			</div>
+            
+        </div>
+		<div class="clear"></div>
+		</div>	
+		<div class="clear"></div>
+	</div>
+	
+        <div class="hidden">
+            <div id="inline_example1" style="padding:10px; background:#fff;">
+              <p>No spam.</p>
+            </div>
+            <div id="messagetouser"></div>
+        </div>
+        <div class="clear"></div> 
+    
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34706773-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+
+
+<div id="supersized-loader"></div><ul id="supersized"></ul></body></html>
