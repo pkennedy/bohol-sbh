@@ -34,6 +34,8 @@
 <script type="text/javascript" src="../js/supersized.3.2.6.min.js"></script>
 <script type="text/javascript" src="../js/customfuncs.js"></script>
 
+<script src="../js/galleria/galleria-1.2.8.min.js"></script>
+
 <script type="text/javascript">
     var url = window.location.pathname.split("/");
     url = url[(url.length - 1)];
@@ -321,16 +323,30 @@ btnWidth:170,
 
 </div>
 
+            <div id="galleria">
 
-<div style="clear:both; padding: 5px ; height: 630px; width: 940px; position: relative; overflow: hidden" id="slideshow-mod4f2909d1cce15" > 
+                <img src="../images/gallery/IMG_7912.jpg">
+                <img src="../images/gallery/IMG_7770.jpg">
+
+            </div>
+
+            <script>
+                Galleria.loadTheme('../js/galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('#galleria');
+            </script>
 
 
-<a href="http://www.boholsouthbeach.com/images/gallery/IMG_7912.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; ">
-    <img src="../images/gallery/IMG_7912.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
-<a href="http://www.boholsouthbeach.com/images/gallery/IMG_7770.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; ">
-    <img src="../images/gallery/IMG_7770.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
 
-</div>
+<!--
+        <div style="clear:both; padding: 5px ; height: 630px; width: 940px; position: relative; overflow: hidden" id="slideshow-mod4f2909d1cce15" > 
+
+
+        <a href="http://www.boholsouthbeach.com/images/gallery/IMG_7912.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; ">
+            <img src="../images/gallery/IMG_7912.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
+        <a href="http://www.boholsouthbeach.com/images/gallery/IMG_7770.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; ">
+            <img src="../images/gallery/IMG_7770.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
+
+        </div>
         
         <script src="../js/cycle.js" type="text/javascript"></script>
         
@@ -344,7 +360,7 @@ btnWidth:170,
             });
 	    </script>
         
-        
+-->        
 </div>
 
 </div>		

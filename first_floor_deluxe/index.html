@@ -26,13 +26,17 @@
 <script src="../js/colorbox.js"></script>
 <script src="../js/functions.js"></script>
 <script>
-                                                                                                                                                                                                 var root = '/';
-                                                                                                                                                                                                 $(function () {
-                                                                                                                                                                                                     showcart();
-                                                                                                                                                                                                 });
-	</script>
+    var root = '/';
+    $(function () {
+        showcart();
+    });
+</script>
+
+
 <script type="text/javascript" src="../js/supersized.3.2.6.min.js"></script>
 <script type="text/javascript" src="../js/customfuncs.js"></script>
+
+<script src="../js/galleria/galleria-1.2.8.min.js"></script>
 
 <script type="text/javascript">
     var url = window.location.pathname.split("/");
@@ -299,59 +303,67 @@ btnWidth:170,
 		<div class="clear"></div>
     </div> 
 <div class="clear"></div>	
-	<div class="container_16" style="margin: 0px auto;">
+
+
+<div class="container_16" style="margin: 0px auto;">
         
     
 
 
-<div class="grid_16 conswap contentwrap_int">
+    <div class="grid_16 conswap contentwrap_int">
 
-    <div class="gallerybox">
+        <div class="gallerybox">
 
-<div class="grid_16" id="col0">
-<h1>
-	First Floor Deluxe Room</h1>
-<p>
-	First floor deluxe rooms have a gorgeous view of the ocean. Each room opens onto a verandah adjacent to the Infinity Pool.</p>
-<p>
-	Each room has a floating bed, with remote control under-bed soft illumination.</p>
-<p>
-    Standard occupancy for these rooms is two adults. Two more adults or children can also stay in the room on an air mattress for a small extra fee.
-</p>
+            <div class="grid_16" id="col0">
+                <h1>First Floor Deluxe Room</h1>
 
-</div>
+                <p>First floor deluxe rooms have a gorgeous view of the ocean. Each room opens onto a verandah adjacent to the Infinity Pool.</p>
 
+                <p>Each room has a floating bed, with remote control under-bed soft illumination.</p>
 
-<div style="clear:both; padding: 5px ; height: 630px; width: 940px; position: relative; overflow: hidden" id="slideshow-mod4f2909d1cce15" > 
+                <p>Standard occupancy for these rooms is two adults. Two more adults or children can also stay in the room on an air mattress for a small extra fee.</p>
+            </div>
 
+            <div id="galleria">
 
-<a href="http://www.boholsouthbeach.com/images/gallery/IMG_6759.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; ">
-    <img src="../images/gallery/IMG_6759.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
-<a href="http://www.boholsouthbeach.com/images/gallery/IMG_7770.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; ">
-    <img src="../images/gallery/IMG_7770.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
+                <img src="../images/gallery/IMG_6759.jpg">
+                <img src="../images/gallery/IMG_7770.jpg">
 
-</div>
+            </div>
+
+            <script>
+                Galleria.loadTheme('../js/galleria/themes/classic/galleria.classic.min.js');
+                Galleria.run('#galleria');
+            </script>
+
+            <!--
+            <div style="clear:both; padding: 5px ; height: 630px; width: 940px; position: relative; overflow: hidden" id="slideshow-mod4f2909d1cce15" > 
+
+                <a href="http://www.boholsouthbeach.com/images/gallery/IMG_6759.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; ">
+                    <img src="../images/gallery/IMG_6759.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
+                <a href="http://www.boholsouthbeach.com/images/gallery/IMG_7770.jpg" class="colorbox gallery cboxElement" target="_self" rel="galmod4f2909d1cce15" style="display: none; position: absolute; top: 0px; left: 0px; z-index: 14; opacity: 0; width: 940px; height: 332px; ">
+                    <img src="../images/gallery/IMG_7770.jpg" width="940" height="630" style="margin-left: 0px; padding-left:10px"></a>
+
+            </div>
         
-        <script src="../js/cycle.js" type="text/javascript"></script>
+            <script src="../js/cycle.js" type="text/javascript"></script>
         
-        <script>
-            $(function () {
-                $("#slideshow-mod4f2909d1cce15").cycle({
-                    fx: 'fade',
+            <script>
+                $(function () {
+                    $("#slideshow-mod4f2909d1cce15").cycle({
+                        fx: 'fade',
 
-                    timeout: 30000
+                        timeout: 30000
+                    });
                 });
-            });
-	    </script>
-        
-        
-</div>
+	        </script> -->
 
-</div>		
-<div class="clear"></div>
-    
-		</div>
         </div>
+
+    </div>		
+    <div class="clear"></div>
+    
+</div>
 
 <div class="clear"></div>
 
