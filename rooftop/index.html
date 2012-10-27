@@ -166,7 +166,7 @@ btnWidth:170,
 
                 <p>The hotel's rooftop provides the perfect location from which to scan the horizon for ship traffic, watch the fishermen's and trader's pumpboats motoring back and forth, observe the nearby offshore islands, people watch on the beach below, while you listen to the rustling of the warm wind in the nearby coconut trees.</p>
 
-                <p>The rooftop has a bar and outdoor dining facilities, with ample shade, for you to enjoy and while way the hours.</p>
+                <p>The rooftop has a bar and outdoor dining facilities, with ample shade, for you to enjoy and while away the hours.</p>
 
                 <p>We have also held special events, including wedding receptions and salsa dance nights, on the rooftop deck.</p>
             </div>
@@ -184,7 +184,9 @@ btnWidth:170,
 
             <script>
                 Galleria.loadTheme('../js/galleria/themes/classic/galleria.classic.min.js');
-                Galleria.run('#galleria');
+                Galleria.run('#galleria', {
+                    autoplay: 5000 // will move forward every 5 seconds
+                });
             </script>
 
         </div>
