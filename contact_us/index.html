@@ -25,107 +25,8 @@
 <script type="text/javascript" async="" src="../js/ga.js"></script>
 <script src="../js/colorbox.js"></script>
 <script src="../js/functions.js"></script>
-<script>
-                                                                                                                                                                                                 var root = '/';
-                                                                                                                                                                                                 $(function () {
-                                                                                                                                                                                                     showcart();
-                                                                                                                                                                                                 });
-	</script>
 <script type="text/javascript" src="../js/supersized.3.2.6.min.js"></script>
 <script type="text/javascript" src="../js/customfuncs.js"></script>
-
-<script type="text/javascript">
-    var url = window.location.pathname.split("/");
-    url = url[(url.length - 1)];
-
-
-    $(function () {
-        $('.colorbox').colorbox({
-            opacity: .4,
-            maxHeight: "95%",
-            maxWidth: "95%",
-            onOpen: function () {
-                $('.youtube-player').css('visibility', 'hidden');
-            },
-            onClosed: function () {
-                $('.youtube-player').css('visibility', 'visible');
-            }
-        });
-
-        var zIndexNumber = 1000;
-        $('#menu').each(function () {
-            $(this).css('zIndex', zIndexNumber);
-            zIndexNumber -= 10;
-        });
-
-        // if on home
-        switch (url) {
-
-
-            case "": case "home": case "index.html": case "new_index.html": 
-
-                $("#showmain").css('display', 'block');
-                $(".colorise").css({ background: 'url(http://www.boholsouthbeach.com/images/blackdot.png) repeat', float: 'left', height: '120px', overflow: 'hidden', position: 'relative', top: '465px' });
-                $(".colorise h3, .colorise p").css("color", "#FFFFFF");
-
-                //start supersized
-                $.supersized({
-
-                    // Functionality
-                    slide_interval: 4000, 	// Length between transitions
-                    transition: 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-                    transition_speed: 1400, 	// Speed of transition
-
-                    // Components							
-                    slide_links: 'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
-                    slides: [			// Slideshow Images
-{image: 'images/carousel/Home1.jpg' },
-{ image: 'images/carousel/Home2.jpg' },
-{ image: 'images/carousel/Home3.jpg' },
-{ image: 'images/carousel/Home4.jpg' },
-{ image: 'images/carousel/Home5.jpg' },
-{ image: 'images/carousel/Home6.jpg' },
-{ image: 'images/carousel/Home7.jpg' },
-{ image: 'images/carousel/Home8.jpg' },
-{ image: 'images/carousel/Home9.jpg' },
-{ image: 'images/carousel/Home10.jpg' }
-
-                });
-                //end supersized
-                break;
-
-
-            default:
-                $(".contentwrap").removeClass('grid_12').addClass('grid_16 conswap');
-                $("#showmainleft").remove();
-                $(".conswap").removeClass('contentwrap').addClass('contentwrap_int');
-                $(".frame").css("background", "#666665 ");
-                $("body").css("background", "#FCFBE9 url('http://www.boholsouthbeach.com/images/background.jpg') no-repeat top center fixed");
-                break;
-        }
-
-
-    });
-    function changebg(image) {
-        $("body").css("background", "url('http://www.boholsouthbeach.com/images/carousel/" + image + "') no-repeat fixed center top #343837");
-    }
-
-    function unhidehome() {
-        var delay = 1000;
-        //var fadein = setTimeout("$('.colorise').fadeIn(500);", delay);
-        $(".colorise").animate({ top: '0', height: '510px' }, 500);
-        $("#showmain").css('display', 'none');
-        $(".closecontent").show();
-    };
-
-    function hidehome() {
-        //$('.colorise').fadeOut(500);
-        $(".colorise").animate({ top: '465px', height: '175px' }, 500);
-        var fadein = setTimeout("$('#showmain').show();", 500);
-        //$("#showmain").show();
-        $(".closecontent").hide();
-    }	
-</script>	
 
 </head>
 
@@ -166,14 +67,14 @@
       <div class="container_16">
          <div class="grid_16" id="header">
             <div id="logo" class="grid_6 alpha">
-                <a href="http://www.boholsouthbeach.com/new_index.html"><img src="../images/SF-BSB.png" height="100px" width="320px" alt="Bohol South Beach Hotel&amp, Panglao"></a>
+                <a href="http://www.boholsouthbeach.com/index.html"><img src="../images/SF-BSB.png" height="100px" width="320px" alt="Bohol South Beach Hotel&amp, Panglao"></a>
             </div>
 			
 			<div id="menu" class="grid_8 alpha" style="z-index: 1000; ">
 				
-                <li class="dropmenu">
+                <ul class="dropmenu">
 					
-						<li class="sys_menuactive"><a href="../new_index.html">Welcome</a>
+						<li class="sys_menuactive"><a href="../index.html">Welcome</a>
 							
 								<ul class="submenu subsys_menuactive">
 									
@@ -183,76 +84,28 @@
 									
 									<li><a href="http://www.boholsouthbeach.com/getting_here">Getting Here</a></li>
 									
-<!--									<li><a href="http://www.boholsouthbeach.com/blog">Blog</a></li> -->
-
 									<li><a href="http://www.boholsouthbeach.com/contact_us">Contact Us</a></li>									
 																		
 								</ul>
 							
 						</li>
-						<li class=""><a href="http://www.boholsouthbeach.com/rooms">Accomodations</a>
-							
-								<ul class="submenu sub">
-									
-									<li><a href="http://www.boholsouthbeach.com/sea_view_rooms">Sea View Rooms</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/standard_rooms">Standard Rooms</a></li>
-																		
-								</ul>
-							
+
+						<li class=""><a href="http://www.boholsouthbeach.com/rooms">Accomodations</a>							
 						</li>
 					
 						<li class=""><a href="http://www.boholsouthbeach.com/services_amenities">Services &amp; Amenities </a>
-							
-								<ul class="submenu sub">
-									
-									<li><a href="http://www.boholsouthbeach.com/dining">Dining</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/indoor_lounge">Indoor Lounge Area</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/rooftop_hangout">Rooftop Deck</a></li>									
-									
-								</ul>
-							
 						</li>
 					
 						<li class=""><a href="http://www.boholsouthbeach.com/destinations">Destinations</a>
-							
-								<ul class="submenu sub">
-									
-									<li><a href="http://www.boholsouthbeach.com/diving_tours">Diving Tours</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/balicasag island">Balicasag Island</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/virgin_island">Virgin Island</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/danao_beach">Danao Beach</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/alona_beach">Alona Beach</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/bohol_history">Bohol History</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/wwii_sites">World War II Sites</a></li>
-									
-									<li><a href="http://www.boholsouthbeach.com/chocolate_hills">Chocolate Hills</a></li>
-
-									<li><a href="http://www.boholsouthbeach.com/tarsier">Tarsier Sanctuary</a></li>
-									
-								</ul>
-							
 						</li>
 					
-						<li class=""><a href="http://www.boholsouthbeach.com/gallery_images">Gallery</a>
-							
+						<li class=""><a href="http://www.boholsouthbeach.com/gallery_images">Gallery</a>							
 						</li>
 										
-                   <!--                   <li class=""><a href='http://live.ipms247.com/booking/book-rooms-368-en-English' target='_blank'>Book Now</a> 
-				</li> -->
                 </ul>
 
 			</div>
 		
-
 
   <div id="bookingbutton" class="grid_2 omega" style="margin: 0; padding:0; left:0; margin-top:40px;">
                <a href="http://live.ipms247.com/booking/book-rooms-368-en-English" id="_resbookingbtnA" target="_blank" style="text-decoration:none;">
