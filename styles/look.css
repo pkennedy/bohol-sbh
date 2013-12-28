@@ -114,8 +114,8 @@ h6 {font:bold 12px Arial; color:#000; margin:0 0 5px 0; padding:0; }
 p {padding: 5px 0 20px 0; font-size:12px; line-height:18px; color:#333;}
 
 ul {list-style-position: outside; padding: 5px 0 20px 20px; font-size:12px; line-height:18px; color:#aaa; list-style-type:disc; font-size:12px;}
-ul li {padding:0 0 10px 10px; background:url(../images/starfish.png) no-repeat left center; list-style: none; color:#000; line-height:20px;}
-.special-link a:hover { text-decoration:underline;}
+.room-list li {padding:0 0 10px 10px; background:url(../images/starfish.png) no-repeat left center; list-style: none; color:#000; line-height:20px;}
+.room-list a:hover { text-decoration:underline;}
 .rss_feed_module li {padding:0 0 10px 10px; background: none; list-style: none; color:#000;}
 
 
