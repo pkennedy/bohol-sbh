@@ -7,7 +7,7 @@
 <link href="styles/reset.css" type="text/css" rel="stylesheet">
 <link href="styles/960-16.css" type="text/css" rel="stylesheet">
 <link href="styles/style.css" type="text/css" rel="stylesheet">
-<link href="styles/colorbox.css" type="text/css" rel="stylesheet">
+<link href="styles/style3.css" type="text/css" rel="stylesheet">
 <link href="styles/look.css" type="text/css" rel="stylesheet">
 <link href="http://live.ipms247.com/themes/reservation/css/bookingbtn/resbookingbox.css" rel="stylesheet" type="text/css" />
 <link href="http://live.ipms247.com/themes/reservation/css/bookingbtn/jquery.ui.datepicker.css" rel="stylesheet" type="text/css" />
@@ -16,128 +16,25 @@
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/common.js" type="text/javascript"></script>
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbox.js" type="text/javascript"></script>
 <script src="http://live.ipms247.com/themes/reservation/js/bookingbtn/resbookingbtn.js" type="text/javascript"></script>
-<script type="text/javascript" async="" src="js/ga.js"></script>
-<script src="js/colorbox.js"></script>
-<script src="js/functions.js"></script>
-<script type="text/javascript" src="js/supersized.3.2.6.min.js"></script>
-<script type="text/javascript" src="js/customfuncs.js"></script>
-
-<script type="text/javascript">
-	var url = window.location.pathname.split("/");
-	url = url[(url.length - 1)];
-		
-	$(function() 
-	{	
-			$('.colorbox').colorbox({
-			opacity: .4,
-			maxHeight:"95%",
-			maxWidth:"95%",
-			onOpen: function(){
-				$('.youtube-player').css('visibility', 'hidden');
-			},
-			onClosed: function(){
-				$('.youtube-player').css('visibility', 'visible');
-			}
-		});
-		
-		var zIndexNumber = 1000;
-		$('#menu').each(function() {
-			$(this).css('zIndex', zIndexNumber);
-			zIndexNumber -= 10;
-		});
-		
-		// if on home
-		switch(url)
-		{
-		    case "": case "home": case "index.html": case "new_index.html": 
-		
-			$("#showmain").css('display', 'block');	
-			$(".colorise").css({background: 'url(http://www.boholsouthbeach.com/images/blackdot.png) repeat', float:'left', height: '120px', overflow:'hidden', position:'relative', top:'465px'});
-			$(".colorise h3, .colorise p").css("color", "#FFFFFF");
-
-				//start supersized
-				$.supersized({
-				
-					// Functionality
-					slide_interval          :   2500,		// Length between transitions
-					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-					transition_speed		:	500,		// Speed of transition
-															   
-					// Components							
-					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					slides 					:  	[			// Slideshow Images
-{ image: 'images/carousel/Home1.jpg' },
-{ image: 'images/carousel/Home1a.jpg' },
-{ image: 'images/carousel/beachshot1920.jpg' },
-{ image: 'images/carousel/Home2.jpg' },
-{ image: 'images/carousel/Home3.jpg' },
-{ image: 'images/gallery/e_NSA2318.jpg' },
-{ image: 'images/carousel/Home5.jpg' },
-{ image: 'images/gallery/DSC_6859.jpg' },
-{ image: 'images/carousel/DSC_4116_1920.jpg' },
-{ image: 'images/carousel/Home7.jpg' },
-{ image: 'images/carousel/Home9.jpg' },
-{ image: 'images/carousel/DSC_2086_1920.jpg' },
-{ image: 'images/carousel/Home10a.jpg' },
-{ image: 'images/carousel/Home11.jpg' },
-{ image: 'images/carousel/File1043-001.jpg' }
-					]
-					
-				});
-				//end supersized
-		break;
-		
-			
-		  default: 
-		$(".contentwrap").removeClass('grid_12').addClass('grid_16 conswap');
-		$("#showmainleft").remove();
-		$(".conswap").removeClass('contentwrap').addClass('contentwrap_int');
-		$(".frame") .css("background", "#666665 ");
-		$("body").css("background", "#FCFBE9 url('http://www.boholsouthbeach.com/images/background.jpg') no-repeat top center fixed");
-		break;
-		}
-		
-		
-	});
-	function changebg(image)
-	{
-	    $("body").css("background", "url('http://www.boholsouthbeach.com/images/carousel/"+image+"') no-repeat fixed center top #343837");
-	}
+<script type="text/javascript" async="" src="js/ga.js"></script> 
 	
-	function unhidehome() 
-	{				
-		var delay = 1000;
-		//var fadein = setTimeout("$('.colorise').fadeIn(500);", delay);
-		$(".colorise").animate({top: '0', height: '510px'}, 500);
-		$("#showmain").css('display', 'none');
-		$(".closecontent").show();
-	};
-	
-	function hidehome(){
-		//$('.colorise').fadeOut(500);
-		$(".colorise").animate({top: '465px', height: '175px'}, 500);
-		var fadein = setTimeout("$('#showmain').show();", 500);
-		//$("#showmain").show();
-		$(".closecontent").hide();
-	}	
-</script>	
-
 </head>
 
 <body>
-<div id="cboxOverlay" style="display: none; "></div>
-<div id="colorbox" style="padding-bottom: 42px; padding-right: 42px; display: none; " class="">
-  <div id="cboxWrapper" style=""><div id="false" style="">
-    <div id="cboxTopLeft" style="float: left; "></div>
-    <div id="cboxTopCenter" style="float: left; "></div>
-    <div id="cboxTopRight" style="float: left; "></div>
-  </div>
-  <div id="false" style="clear: left; ">
-<div id="cboxMiddleLeft" style="float: left; "></div><div id="cboxContent" style="float: left; "><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; " class=""></div>
-<div id="cboxLoadingOverlay" style="" class=""></div><div id="cboxLoadingGraphic" style="" class=""></div><div id="cboxTitle" style="" class=""></div><div id="cboxCurrent" style="" class=""></div>
-<div id="cboxNext" style="" class=""></div><div id="cboxPrevious" style="" class=""></div><div id="cboxSlideshow" style="" class=""></div><div id="cboxClose" style="" class=""></div></div>
-<div id="cboxMiddleRight" style="float: left; "></div></div><div id="false" style="clear: left; "><div id="cboxBottomLeft" style="float: left; "></div><div id="cboxBottomCenter" style="float: left; "></div>
-<div id="cboxBottomRight" style="float: left; "></div></div></div><div id="false" style="position: absolute; width: 9999px; visibility: hidden; display: none; "></div></div>
+
+        <ul class="cb-slideshow">
+            <li><span>Image 1</span></li>
+            <li><span>Image 2</span></li>
+            <li><span>Image 3</span></li>
+            <li><span>Image 4</span></li>
+            <li><span>Image 5</span></li>
+            <li><span>Image 6</span></li>
+            <li><span>Image 7</span></li>
+            <li><span>Image 8</span></li>
+            <li><span>Image 9</span></li>
+            <li><span>Image 10</span></li>
+        </ul>
+
 	<div class="frame">
 		<div class="container_16">
     	<div class="grid_16" id="header">
@@ -260,45 +157,13 @@
 	     <div class="clear">&nbsp;</div>
 	  </div>
    </div>
-   <div class="clear"></div>
+
 </div>
 </div>		
 
   <div class="clear"></div>
-
 </div>
 
-	<div class="frame" style="visibility:hidden">
-		<div class="container_16">
-        <div class="grid_16" id="footer">
-        	
-			
-			<div class="grid_16">
-				
-			</div>
-            <div class="grid_14" style="font:11px Arial; color:#fff">
-                Bohol South Beach Hotel, Danao Beach, Panglao, Bohol, Philippines.
-            </div>
-            <div class="grid_2 omega" style="text-align:right;">
-				<a href="https://www.facebook.com/boholsouthbeach.hotel" title="Bohol South Beach Hotel on Facebook"><img src="images/facebook.png" alt="Bohol South Beach Hotel on Facebook" style="margin-right:5px;"></a>
-				<a href="http://twitter.com/#!/BoholSouthBeach" title="Bohol South Beach Hotel on Twitter"><img src="images/twitter.png" alt="Bohol South Beach Hotel on Twitter" style="margin-right:5px;"></a>
-				<a href="http://www.youtube.com/channel/UCn0QT3TFilYk440wIcKmdxQ?feature=plcp" title="Bohol South Beach Hotel on Youtube"><img src="images/youtube.png" alt="Bohol South Beach Hotel on Youtube" style="margin-right:5px;"></a>				
-			</div>
-            
-        </div>
-		<div class="clear"></div>
-		</div>	
-		<div class="clear"></div>
-	</div>
-
-        <div class="hidden">
-            <div id="inline_example1" style="padding:10px; background:#fff;">
-              <p>TNo-spam.</p>
-            </div>
-            <div id="messagetouser"></div>
-        </div>
-        <div class="clear"></div> 
-    
 <script type="text/javascript">
 
     var _gaq = _gaq || [];
